@@ -517,16 +517,20 @@ footer {
 }
 
 .close-modal {
+  position: absolute;
+  right: 8;
+  top: 8;
 width: 30px;
 height: 30px;
 
 background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 100%;
 box-sizing: border-box;
 }
 
 .close-modal-x {
   width: 18px;
   height: 18px;
-
+  fill: #000000;
 }
