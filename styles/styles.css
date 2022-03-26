@@ -244,25 +244,29 @@ a:hover {
 /*pecularities-------------------------------------------------------------------------------------------------------------------------- */
 
 
-.pec-list {
+.pecularities {
+  margin-bottom: 94px;
+}
+
+.pecularities__list {
   display: flex;
   margin-bottom: 94px;
 }
 
-.pec-item {
+.pecularities__item {
   width: 270px;
   height: 101px;
   margin-bottom: 94px;
 }
 
-.pec-div {
+.pecularities__image {
   height: 120px;
   padding-top: 25px;
 
   background: #F5F4FA;
 }
 
-.pec-svg {
+.pecularities__svg {
   width: 70px;
   height: 70px;
   margin-left: 100px;
@@ -270,37 +274,59 @@ a:hover {
   fill: var(--ff-accent-color);
 }
 
-.pec-item:not(last-child) {
+.pecularities__item:not(last-child) {
   margin-right: 30px;
 }
 
-.pec-h3 {
+.pecularities__heading {
   margin-top: 30px;
   margin-bottom: 10px;
 
   text-transform: uppercase;
 }
 
-.pec {
-  margin-bottom: 94px;
-}
-
 
 /*wad------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-.wad {
+.about {
   margin-bottom: 94px;
 }
 
-.wad-list {
+.about__list {
   display: flex;
 }
 
-.wad-item:not(:first-child) {
+.about__item {
+  position: relative;
+}
+
+.about__item:not(:first-child) {
   margin-left: 30px;
 }
 
+.about__thumb {
+position: absolute;
+left: 0;
+top: calc(294px - 70px);
+
+width: 370px;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);
+display: flex;
+padding-left: 83px;
+align-items: center;
+
+font-family: var(--main-ff);
+font-weight: var(--fw-bolder);
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
 
 /*team----------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -324,6 +350,8 @@ a:hover {
   width: 270px;
 
   background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(last-child) {
