@@ -69,15 +69,6 @@ h2 {
   text-align: center;
 }
 
-h1 {
-  font-family: var(--main-ff);
-  font-size: 44px;
-  font-weight: 900;
-  margin-bottom: 30px;
-
-  color: var(--main-color-2);
-}
-
 a:visited {
   text-decoration: none;
 
@@ -88,7 +79,7 @@ a:visited {
 /*header--------------------------------------------------------------------------------------------------------------------------------- */
 
 
-header {
+.header {
   display: flex;
   align-items: center;
 
@@ -182,7 +173,7 @@ a:hover {
   display: flex;
 }
 
-.contact-list__svg {
+.contact-list__mail {
   width: 16px;
   height: 12px;
   margin-top: 1px;
@@ -190,7 +181,7 @@ a:hover {
   fill: currentColor;
 }
 
-.contact-svg-phone {
+.contact-list__phone {
   margin-top: 3px ;
   width: 10px;
   height: 16px;
@@ -202,7 +193,7 @@ a:hover {
   margin-left: 50px;
 }
 
-.up-contact-link {
+.contact-list__link {
   color: inherit;
   transform: 50% -50%;
 }
@@ -217,13 +208,22 @@ a:hover {
   margin-bottom: 94px;
 
   font-weight: 900;
-font-size: 44px;
-line-height: 136%;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   background: url(images/background.png);
+  color: var(--main-color-2);
+}
+
+.hero__heading {
+  font-family: var(--main-ff);
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 30px;
+
   color: var(--main-color-2);
 }
 
@@ -651,3 +651,4 @@ textarea {
   color: var(--ff-accent-color);
   text-decoration: underline;
 }
+ 
