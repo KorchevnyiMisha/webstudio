@@ -340,12 +340,12 @@ color: #FFFFFF;
   background: #F5F4FA;
 }
 
-.team-list {
+.team__list {
   display: flex;
   margin-left: 215px;
 }
 
-.team-item {
+.team__item {
   height: 428px;
   width: 270px;
 
@@ -354,15 +354,15 @@ color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(last-child) {
+.team__item:not(last-child) {
   margin-right: 30px;
 }
 
-.team-img {
+.team__img {
   width: 270px;
 }
 
-.team-h {
+.team__h {
   margin-top: 30px;
 
   font-family: var(--main-ff);
@@ -373,7 +373,7 @@ color: #FFFFFF;
   text-align: center;
 }
 
-.team-text {
+.team__text {
   margin-top: 10px;
   font-family: var(--main-ff);
   font-size: 16px;
@@ -385,12 +385,12 @@ color: #FFFFFF;
   color: var(--text-color);
 }
 
-.icons-list {
+.icons {
   display: flex;
   margin-left: 32px;
 }
 
-.icons-item {
+.icons__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -402,16 +402,16 @@ color: #FFFFFF;
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.f-icon {
+.icons__item--first {
   margin-left: 32px;
 }
 
-.icons-list:not(first-child) {
+.icons:not(first-child) {
   margin-left: 10px;
 }
 
 
-.team-icon {
+.icons__svg {
   margin-top: 12px;
   margin-left: 12px;
   width: 20px;
@@ -419,11 +419,11 @@ color: #FFFFFF;
   fill: #AFB1B8;
 }
 
-.icons-item:hover .team-icon {
+.icons__link:hover .icons__svg {
   fill: var(--main-color-2);
 }
 
-.icons-item:hover {
+.icons__link:hover {
   background-color: var(--ff-accent-color);
   color: var(--main-color-2);
   fill: #FFF;
@@ -432,7 +432,7 @@ color: #FFFFFF;
 /* clients----------------------------------------------------------------------------------------------------------------------------- */
 
 
-.clients-h {
+.clients__heading {
   margin-top: 94px;
   margin-bottom: 50px;
   font-family: var(--main-ff);
@@ -444,7 +444,7 @@ color: #FFFFFF;
 
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   margin-bottom: 94px;
 }
